@@ -4,7 +4,7 @@
   "description": "An base project for front-end",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config build/webpack.base.conf.js"
   },
   "repository": {
     "type": "git",
