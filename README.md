@@ -3,7 +3,7 @@
 
 ## 功能
 
-- [ ] http服务
+- [x] http服务
 - [ ] 热加载
 - [ ] http代理
 - [ ] sass与less文件处理
