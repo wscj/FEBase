@@ -1,6 +1,7 @@
 import './index.css'
 import icon from './img.jpg'
 import './icomoon/style.css'
+import './index.scss'
 
 const div = document.createElement('div')
 div.innerText = 'Add child element.'
