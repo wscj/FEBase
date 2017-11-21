@@ -6,7 +6,7 @@
 - [x] http服务
 - [x] 热加载
 - [x] css、图片等常用文件处理
-- [ ] http代理
+- [x] http代理
 - [x] sass与less文件处理
 - [ ] `.vue`文件处理
 - [ ] `.vue`文件调试
