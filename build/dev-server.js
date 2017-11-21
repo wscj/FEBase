@@ -4,6 +4,8 @@ const path = require('path');
 const webpack = require('webpack')
 const webpackConf = require('./webpack.dev.conf')
 const compiler = webpack(webpackConf)
+const proxy = require('http-proxy-middleware')
+const conf = require('./conf')
 
 //设置静态文件路径
 app.use(express.static('./static'));
@@ -15,6 +17,11 @@ const devMiddleware = require('webpack-dev-middleware')(compiler, {
 
 app.use(devMiddleware)
 app.use(require("webpack-hot-middleware")(compiler));
+
+const proxyTable = conf.dev.proxyTable
+Object.keys(proxyTable).forEach(context => {
+	app.use(context, proxy(proxyTable[context]))
+})
 
 app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, '../index.html'), err => {
