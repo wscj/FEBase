@@ -30,6 +30,15 @@ module.exports = {
 	        options: {
 	          limit: 10000
 	        }
+		}, {
+			test: /.js$/,
+			include: [path.join(__dirname, '../src')],
+			use: {
+				loader: 'babel-loader',
+				options: {
+					presets: ['babel-preset-env']
+				}
+			}
 		}]
 	},
 	plugins: [
