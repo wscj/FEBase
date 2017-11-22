@@ -30,6 +30,7 @@ input[type=button] {
 	font-size: 16px;
 	border-radius: 4px;
 	cursor: pointer;
+	display: block;
 }
 
 input[type=button]:active {

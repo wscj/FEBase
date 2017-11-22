@@ -4,7 +4,7 @@
   "description": "An base project for front-end",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config ./build/webpack.base.conf.js",
+    "build": "webpack --config ./build/webpack.prod.conf.js",
     "dev": "supervisor --ignore src ./build/dev-server.js",
     "start": "node ./build/dev-server.js"
   },
@@ -37,5 +37,8 @@
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.20.0",
     "webpack-merge": "^4.1.1"
+  },
+  "dependencies": {
+    "velocity-animate": "^1.5.0"
   }
 }

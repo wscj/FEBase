@@ -3,6 +3,7 @@ import icon from './img.jpg'
 import './icomoon/style.css'
 import './index.scss'
 import './index.less'
+import 'velocity-animate'
 
 const div = document.createElement('div')
 div.innerText = 'Add child element.'
@@ -29,4 +30,20 @@ button.onclick = function() {
         }
     }
     xhr.send()
+}
+
+const button2 = document.createElement('input')
+button2.type = 'button'
+button2.value = 'Velocity'
+document.body.appendChild(button2)
+button2.onclick = function(e) {
+	Velocity(e.target, 
+		{ height: '50px' }, 
+		{ 
+			duration: 200, 
+			easing: 'linear',
+			complete: () => {
+				Velocity(e.target, { height: '30px' })
+			}
+		})
 }
