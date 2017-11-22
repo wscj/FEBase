@@ -13,9 +13,6 @@ module.exports = {
 			test: /.css$/,
 			use: ['style-loader', 'css-loader']
 		}, {
-			test: /\.(png|jpg|jpeg|svg|gif|bmp|ico)$/,
-			use: ['file-loader']
-		}, {
 			test: /\.(woff|woff2|eot|ttf|otf)$/,
 			use: ['file-loader']
 		}, {
@@ -24,6 +21,15 @@ module.exports = {
 		}, {
 			test: /\.less$/,
 			use: ['style-loader', 'css-loader', 'less-loader']
+		}, {
+		// 	test: /\.(png|jpg|jpeg|svg|gif|bmp|ico)$/,
+		// 	use: ['file-loader']
+		// }, {
+	        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+	        loader: 'url-loader',
+	        options: {
+	          limit: 10000
+	        }
 		}]
 	},
 	plugins: [
