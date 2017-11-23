@@ -47,3 +47,11 @@ button2.onclick = function(e) {
 			}
 		})
 }
+
+const button3 = document.createElement('input')
+button3.type = 'button'
+button3.value = 'Debugger'
+document.body.appendChild(button3)
+button3.onclick = function(e) {
+	debugger
+}
