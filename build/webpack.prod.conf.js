@@ -11,7 +11,7 @@ module.exports = merge(baseWebpackConf, {
 	plugins: [
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'vendor',
-			filename: 'vendor.js'
+			filename: 'vendor.[hash].js'
 		})
 	]
 })
