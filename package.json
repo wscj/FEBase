@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wscj/FEBase.git"
+    "url": "git+https://github.com/wscj/webpack-for-react.git"
   },
   "author": "ChenJing",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wscj/FEBase/issues"
+    "url": "https://github.com/wscj/webpack-for-react/issues"
   },
-  "homepage": "https://github.com/wscj/FEBase#readme",
+  "homepage": "https://github.com/wscj/webpack-for-react#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
