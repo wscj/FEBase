@@ -10,18 +10,9 @@ module.exports = {
 	},
 	module: {
 		rules: [{
-		// 	test: /.css$/,
-		// 	use: ['style-loader', 'css-loader']
-		// }, {
 			test: /\.(woff|woff2|eot|ttf|otf)$/,
 			use: ['file-loader']
 		}, {
-		// 	test: /\.scss$/,
-		// 	use: ['sass-loader']
-		// }, {
-		// 	test: /\.less$/,
-		// 	use: ['style-loader', 'css-loader', 'less-loader']
-		// }, {
 	        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
 	        loader: 'url-loader',
 	        options: {
