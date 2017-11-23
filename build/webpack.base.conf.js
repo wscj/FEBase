@@ -2,7 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-	entry: path.join(__dirname, '../src/index.js'),
+	entry: path.join(__dirname, '../src/index.jsx'),
 	output: {
 		filename: '[name].[hash].js',
 		path: path.join(__dirname, '../dist'),
@@ -25,6 +25,20 @@ module.exports = {
 				loader: 'babel-loader',
 				options: {
 					presets: ['babel-preset-env']
+				}
+			}
+		}, {
+			test: /.jsx$/,
+			include: [path.join(__dirname, '../src')],
+			use: {
+				loader: 'babel-loader',
+				options: {
+					presets: ['babel-preset-env', 'babel-preset-react'],
+					env: {
+						development: {
+							presets: ['babel-preset-react-hmre']
+						}
+					}
 				}
 			}
 		}]

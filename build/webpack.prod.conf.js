@@ -5,7 +5,7 @@ const path = require('path')
 
 module.exports = merge(baseWebpackConf, {
 	entry: {
-		main: path.join(__dirname, '../src/index.js'),
+		main: path.join(__dirname, '../src/index.jsx'),
 		vendor: ['velocity-animate']
 	},
 	plugins: [

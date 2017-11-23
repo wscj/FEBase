@@ -1,3 +1,5 @@
+process.env.NODE_ENV = 'production'
+
 const webpack = require('webpack')
 const webpackConf = require('./webpack.prod.conf')
 const fse = require('fs-extra')
@@ -9,11 +11,11 @@ webpack(webpackConf, (err, stats) => {
 	if (err) throw err
 
 	process.stdout.write(stats.toString({
-      colors: true,
-      modules: false,
-      children: false,
-      chunks: false,
-      chunkModules: false
+    	colors: true,
+    	modules: false,
+    	children: false,
+    	chunks: false,
+    	chunkModules: false
     }) + '\n\n')
 
 	process.stdout.write('\n Build complete.\n')
