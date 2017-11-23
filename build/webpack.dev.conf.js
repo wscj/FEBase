@@ -9,7 +9,7 @@ module.exports = merge(baseWebpackConf, {
 	module: {
 		rules: [{
 			test: /.css$/,
-			use: ['style-loader', 'css-loader?sourceMap']
+			use: ['style-loader', 'css-loader?sourceMap&modules&localIdentName=[local]-[hash:base64:12]']
 		}, {
 			test: /\.scss$/,
 			use: ['sass-loader?sourceMap']
