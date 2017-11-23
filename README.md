@@ -9,6 +9,7 @@
 - [x] http代理
 - [x] sass与less文件处理
 - [x] babel编译es6
+- [x] `.js`、`.css`、`.scss`、`.less`文件调试
 - [ ] `.vue`文件处理
 - [ ] `.vue`文件调试
 - [ ] `.jsx`文件处理
