@@ -19,6 +19,10 @@ module.exports = merge(baseWebpackConf, {
 			test: /.css$/,
 			use: ['style-loader', 'css-loader?modules&localIdentName=[local]-[hash:base64:12]']
 		}, {
+			test: /.css$/,
+			use: ['style-loader', 'css-loader?sourceMap'],
+			include: [path.join(__dirname, '../src/assets/img/iconfont')]
+		}, {
 			test: /\.scss$/,
 			use: ['sass-loader']
 		}, {

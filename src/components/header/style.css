@@ -1,6 +1,81 @@
 .header {
 	background-color: #20232a;
 	color: #fff;
+	overflow-y: hidden;
+}
+
+.con {
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0 20px;
+	overflow-y: hidden;
+	display: flex;
+}
+
+.logoCon {
+	flex: 19;
+}
+
+.logo, .title {
+	display: block;
+	float: left;
+}
+
+.logo {
+	font-size: 22px;
+	line-height: 50px !important;
+	color: #61dafb;
+	width: 22px;
+}
+
+.title {
+	color: #61dafb;
 	line-height: 50px;
-	padding: 0 16px;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 8px;
+}
+
+.test1 {
+	background: gray;
+	flex: 62;
+}
+
+.test2 {
+	background: green;
+	flex: 24;
+}
+
+.info {
+	flex: 150px;
+	line-height: 50px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.info > span {
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 15px;
+	user-select: none;
+}
+
+.info > span:hover {
+	color: #61dafb;
+}
+
+.info > span:active {
+	background-color: #373940;
+}
+
+@media (max-width: 599px) and (min-width: 0px) {
+	.logo, .title, .info {
+		line-height: 40px !important;
+	}
+}
+
+@media (min-width: 1280px) {
+	.logo, .title, .info {
+		line-height: 60px !important;
+	}
 }
