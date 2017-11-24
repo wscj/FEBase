@@ -1,5 +1,5 @@
 # Webpack for react
-> 用`webpack`配置一个适合`react`的开发基础项目。
+> 适合`react`开发的`webpack`基础项目
 
 ## 功能
 
@@ -11,5 +11,22 @@
 - [x] babel编译es6
 - [x] `.js`、`.css`、`.scss`、`.less`文件调试
 - [x] `.jsx`文件处理
+- [x] `.jsx`文件调试
 - [x] 打包应用于生产环境的静态文件
 - [x] css作用域组件化
+
+## 安装与运行
+
+```bash
+# 安装依赖
+$ npm i
+
+# 运行
+$ npm run start
+
+# 调试模式运行
+$ npm run dev
+
+# 打包静态文件
+$ npm run build
+```

@@ -1,8 +1,7 @@
 {
-  "name": "fe-base",
+  "name": "webpack-for-react",
   "version": "1.0.0",
-  "description": "An base project for front-end",
-  "main": "index.js",
+  "description": "A simple project for react base on webpack",
   "scripts": {
     "build": "node ./build/build.js",
     "dev": "supervisor --ignore src ./build/dev-server.js",
