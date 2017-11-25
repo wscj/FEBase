@@ -1,7 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import styles from './style.css';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import styles from './style.css'
 import '../../assets/img/iconfont/style.css'
+import Search from '../search/index.jsx'
 
 export default class Header extends React.Component {
 	render () {
@@ -13,7 +14,7 @@ export default class Header extends React.Component {
 						<span className={styles.title}>React</span>
 					</a>
 					<div className={styles.test1}></div>
-					<div className={styles.test2}></div>
+					<Search cls={styles.flex22} />
 					<div className={styles.info}>
 						<span>v16.1.1</span>
 						<span>GitHub<i className='icon-share'></i></span>

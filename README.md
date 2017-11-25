@@ -1,7 +1,7 @@
 # Webpack for react
 > 适合`react`开发的`webpack`基础项目
 
-## 功能
+## 功能（持续更新中）
 
 - [x] http服务
 - [x] 热加载

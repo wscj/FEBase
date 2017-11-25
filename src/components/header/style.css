@@ -41,9 +41,8 @@
 	flex: 62;
 }
 
-.test2 {
-	background: green;
-	flex: 24;
+.flex22 {
+	flex: 22;
 }
 
 .info {
@@ -66,6 +65,11 @@
 
 .info > span:active {
 	background-color: #373940;
+}
+
+.info > span > i {
+	color: #6d6d6d;
+	margin-left: 6px;
 }
 
 @media (max-width: 599px) and (min-width: 0px) {
