@@ -1,7 +1,7 @@
 .search {
 	display: flex;
 	align-items: center;
-	padding: 0 20px;
+	padding-left: 20px;
 }
 
 .inputCon {
@@ -16,22 +16,32 @@
 
 .input {
 	border: none;
-	background-color: #373940;
 	border-radius: 4px;
 	height: 30px;
-	width: 170px;
+	// width: 170px;
 	color: #fff;
 	padding: 0 10px;
 	text-indent: 16px;
 	font-size: 16px;
+	background-color: #20232a;
 }
 
-.input:before {
-	content: 'kk';
-	color: #fff;
+.input:focus {
+	background-color: #373940;
 }
 
-@media (max-width: 599px) and (min-width: 0px) {
+.focused {
+	width: 120px !important;
+}
+
+@media (min-width: 0px) and (max-width: 599px) {
+	.input {
+		width: 0px;
+		transition: width 200ms linear;
+	}
+	.inputCon {
+		min-width: 28px;
+	}
 }
 
 @media (min-width: 1280px) {

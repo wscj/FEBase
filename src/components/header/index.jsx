@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import styles from './style.css'
 import '../../assets/img/iconfont/style.css'
 import Search from '../search/index.jsx'
