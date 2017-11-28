@@ -1,0 +1,31 @@
+.nav {
+	display: flex;
+	overflow-x: hidden;
+}
+
+.nav > a {
+	padding: 0 20px;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: normal;
+	transition: color 200ms;
+}
+
+.nav > a:hover {
+	color: #61dafb;
+}
+
+@media (min-width: 0px) and (max-width: 599px) {
+	.nav > a {
+		line-height: 40px;
+		font-size: 14px;
+		padding: 0 10px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.nav > a {
+		line-height: 60px;
+		font-size: 18px;
+	}
+}

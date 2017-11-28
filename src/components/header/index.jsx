@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './style.css'
 import '../../assets/img/iconfont/style.css'
 import Search from '../search/index.jsx'
+import Nav from '../nav/index.jsx'
 
 export default class Header extends React.Component {
 	render () {
@@ -12,7 +13,7 @@ export default class Header extends React.Component {
 						<span className={'icon-react ' + styles.logo}></span>
 						<span className={styles.title}>React</span>
 					</a>
-					<div className={styles.test1}></div>
+					<Nav cls={styles.flex72} />
 					<Search cls={styles.flex22} />
 					<div className={styles.info}>
 						<span>v16.1.1</span>
