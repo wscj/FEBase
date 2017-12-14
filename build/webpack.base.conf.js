@@ -19,7 +19,7 @@ module.exports = {
 	          limit: 10000
 	        }
 		}, {
-			test: /.js$/,
+			test: /\.js$/,
 			include: [path.join(__dirname, '../src')],
 			use: {
 				loader: 'babel-loader',
@@ -28,7 +28,7 @@ module.exports = {
 				}
 			}
 		}, {
-			test: /.jsx$/,
+			test: /\.jsx$/,
 			include: [path.join(__dirname, '../src')],
 			use: {
 				loader: 'babel-loader',

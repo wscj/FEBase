@@ -16,10 +16,10 @@ module.exports = merge(baseWebpackConf, {
 	],
 	module: {
 		rules: [{
-			test: /.css$/,
+			test: /\.css$/,
 			use: ['style-loader', 'css-loader?modules&localIdentName=[local]-[hash:base64:6]']
 		}, {
-			test: /.css$/,
+			test: /\.css$/,
 			use: ['style-loader', 'css-loader?sourceMap'],
 			include: [path.join(__dirname, '../src/assets/img/iconfont')]
 		}, {

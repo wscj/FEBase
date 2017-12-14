@@ -9,11 +9,11 @@ module.exports = merge(baseWebpackConf, {
 	devtool: '#cheap-module-source-map',
 	module: {
 		rules: [{
-			test: /.css$/,
+			test: /\.css$/,
 			use: ['style-loader', 'css-loader?sourceMap&modules&localIdentName=[local]-[hash:base64:6]'],
 			exclude: [path.join(__dirname, '../src/assets/img/iconfont')]
 		}, {
-			test: /.css$/,
+			test: /\.css$/,
 			use: ['style-loader', 'css-loader?sourceMap'],
 			include: [path.join(__dirname, '../src/assets/img/iconfont')]
 		}, {
