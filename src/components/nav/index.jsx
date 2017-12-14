@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './style.css'
+import PropTypes from 'prop-types'
 
 export default class Nav extends React.Component {
 	render () {
@@ -12,4 +13,8 @@ export default class Nav extends React.Component {
 			</div>
 		)
 	}
+}
+
+Nav.propTypes = {
+	cls: PropTypes.string.isRequired
 }

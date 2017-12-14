@@ -6,7 +6,7 @@
     "build": "node ./build/build.js",
     "dev": "supervisor --ignore src ./build/dev-server.js",
     "start": "node ./build/dev-server.js",
-    "eslint": "eslint --ext .jsx ./src/components/"
+    "eslint": "eslint --ext .jsx ./src/"
   },
   "repository": {
     "type": "git",

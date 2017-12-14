@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './style.css'
 import '../../assets/img/iconfont/style.css'
+import PropTypes from 'prop-types'
 
 export default class Search extends React.Component {
 
@@ -51,4 +52,8 @@ export default class Search extends React.Component {
 			</div>
 		)
 	}
+}
+
+Search.propTypes = {
+	cls: PropTypes.string.isRequired
 }
